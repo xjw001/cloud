@@ -1,1 +1,4 @@
 /.idea/
+/cloud.iml
+/cloud-provider-payment8001/target/classes/
+/cloud-provider-payment8001/cloud-provider-payment8001.iml
