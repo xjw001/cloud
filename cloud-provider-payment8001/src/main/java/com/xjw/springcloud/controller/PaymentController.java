@@ -28,6 +28,8 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
         if(payment != null){
             log.info("查询成功");
+        }else{
+            return new CommonResult(-1,"查询无结果!");
         }
         return new CommonResult(0,"查询成功",payment);
     }
