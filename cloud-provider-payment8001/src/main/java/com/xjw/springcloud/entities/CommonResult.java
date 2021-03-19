@@ -16,4 +16,13 @@ public class CommonResult<T> {
     public CommonResult(Integer code, String message){
         this(code,message,null);
     }
+
+
+    public static CommonResult success(){
+        return new CommonResult(0,"操作成功");
+    }
+
+    public static CommonResult fail(String message){
+        return new CommonResult(-1,"操作失败",message);
+    }
 }
