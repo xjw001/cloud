@@ -20,7 +20,7 @@ public class PaymentController {
     public CommonResult create(@RequestBody Payment payment){
         int count = paymentService.create(payment);
         log.info("成功插入{}条记录",count);
-        return CommonResult.success();
+        return CommonResult.success(count);
     }
 
     @GetMapping("/get/{id}")
