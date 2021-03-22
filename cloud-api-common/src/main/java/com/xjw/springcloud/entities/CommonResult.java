@@ -18,8 +18,8 @@ public class CommonResult<T> {
     }
 
 
-    public static CommonResult success(){
-        return new CommonResult(0,"操作成功");
+    public static <T>CommonResult success(T t){
+        return new CommonResult(0,"操作成功",t);
     }
 
     public static CommonResult fail(String message){
