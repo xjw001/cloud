@@ -19,6 +19,7 @@
       <module>cloud-gateway-gateway9527</module>
     <module>cloud-alibaba-config-nacos-client3377</module>
     <module>cloud-alibaba-sentinel-service8401</module>
+      <module>seata-order-service2001</module>
   </modules>
   <packaging>pom</packaging>
   <name>Maven</name>
